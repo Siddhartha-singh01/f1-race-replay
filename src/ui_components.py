@@ -14,7 +14,7 @@ def _format_wind_direction(degrees: Optional[float]) -> str:
       "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW",
   ]
   idx = int((deg_norm / 22.5) + 0.5) % len(dirs)
-  return dirs[idx]
+  return dirs[idx]                                                 
 
 class BaseComponent:
     def on_resize(self, window): pass
