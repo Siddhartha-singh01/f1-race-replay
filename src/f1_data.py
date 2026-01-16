@@ -13,7 +13,7 @@ from src.lib.time import parse_time_string, format_time
 
 import pandas as pd
 
-def enable_cache():
+def enable_cache():                                                                                                  
     # Check if cache folder exists
     if not os.path.exists('.fastf1-cache'):
         os.makedirs('.fastf1-cache')
