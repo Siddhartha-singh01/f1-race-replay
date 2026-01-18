@@ -33,7 +33,7 @@ def _process_single_driver(args):
     laps_driver = session.laps.pick_drivers(driver_no)
     if laps_driver.empty:
         return None
-
+                                                                                                                           
     driver_max_lap = laps_driver.LapNumber.max() if not laps_driver.empty else 0
 
     t_all = []
